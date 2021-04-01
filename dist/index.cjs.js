@@ -12,7 +12,7 @@ var throttle = require('lodash/throttle');
 var reactRouterDom = require('react-router-dom');
 var reactTransitionGroup = require('react-transition-group');
 
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+function _interopDefaultLegacy(e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
@@ -36,7 +36,7 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-var __assign = function() {
+var __assign = function () {
     __assign = Object.assign || function __assign(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
             s = arguments[i];
@@ -73,9 +73,11 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var getThemeValue = function (path, fallback) { return function (theme) {
-    return get__default['default'](theme, path, fallback);
-}; };
+var getThemeValue = function (path, fallback) {
+    return function (theme) {
+        return get__default['default'](theme, path, fallback);
+    };
+};
 
 var rotate = styled.keyframes(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var spinStyle = styled.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate);
@@ -135,10 +137,12 @@ Text.defaultProps = {
 };
 var templateObject_1$1;
 
-var getExternalLinkProps = function () { return ({
-    target: "_blank",
-    rel: "noreferrer noopener",
-}); };
+var getExternalLinkProps = function () {
+    return ({
+        target: "_blank",
+        rel: "noreferrer noopener",
+    });
+};
 
 var sizes = {
     SM: "sm",
@@ -168,10 +172,12 @@ var removePointerEvents = function (_a) {
     }
     return "";
 };
-var getButtonVariantProp = function (prop) { return function (_a) {
-    var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.PRIMARY : _b;
-    return theme.button[variant][prop];
-}; };
+var getButtonVariantProp = function (prop) {
+    return function (_a) {
+        var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.PRIMARY : _b;
+        return theme.button[variant][prop];
+    };
+};
 var StyledButton = styled__default['default'].button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"])), getButtonVariantProp("background"), getButtonVariantProp("border"), getButtonVariantProp("boxShadow"), getButtonVariantProp("color"), function (_a) {
     var fullWidth = _a.fullWidth;
     return (fullWidth ? "100%" : "max-content");
@@ -200,14 +206,14 @@ var Button = function (_a) {
     var isDisabled = isLoading || disabled;
     return (React__default['default'].createElement(StyledButton, __assign({}, internalProps, props, { isLoading: isLoading, disabled: isDisabled }),
         React__default['default'].isValidElement(startIcon) &&
-            React__default['default'].cloneElement(startIcon, {
-                mr: "0.5rem",
-            }),
+        React__default['default'].cloneElement(startIcon, {
+            mr: "0.5rem",
+        }),
         children,
         React__default['default'].isValidElement(endIcon) &&
-            React__default['default'].cloneElement(endIcon, {
-                ml: "0.5rem",
-            })));
+        React__default['default'].cloneElement(endIcon, {
+            ml: "0.5rem",
+        })));
 };
 Button.defaultProps = {
     variant: variants.PRIMARY,
@@ -1062,26 +1068,26 @@ var getThemeTextColor = function (_a) {
 };
 var StyledTag = styled__default['default'].div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"], ["\n  align-items: center;\n  background-color: ",
     ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"])), function (_a) {
-    var outline = _a.outline, theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "primary" : _b;
-    return outline ? "transparent" : getColor$1(variant, theme);
-}, function (_a) {
-    var _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
-    return getColor$1(variant, theme);
-}, getThemeTextColor, getThemeTextColor);
+        var outline = _a.outline, theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "primary" : _b;
+        return outline ? "transparent" : getColor$1(variant, theme);
+    }, function (_a) {
+        var _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
+        return getColor$1(variant, theme);
+    }, getThemeTextColor, getThemeTextColor);
 var templateObject_1$n;
 
 var Tag = function (_a) {
     var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, props = __rest(_a, ["startIcon", "endIcon", "children"]);
     return (React__default['default'].createElement(StyledTag, __assign({}, props),
         React__default['default'].isValidElement(startIcon) &&
-            React__default['default'].cloneElement(startIcon, {
-                mr: "0.5rem",
-            }),
+        React__default['default'].cloneElement(startIcon, {
+            mr: "0.5rem",
+        }),
         children,
         React__default['default'].isValidElement(endIcon) &&
-            React__default['default'].cloneElement(endIcon, {
-                ml: "0.5rem",
-            })));
+        React__default['default'].cloneElement(endIcon, {
+            ml: "0.5rem",
+        })));
 };
 Tag.defaultProps = {
     variant: "primary",
@@ -1211,28 +1217,32 @@ var Toggle = function (_a) {
         React__default['default'].createElement(Handle, null)));
 };
 
-var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA < upperB) {
-        return -1;
-    }
-    if (upperA > upperB) {
-        return 1;
-    }
-    return 0;
-}; };
-var byTextDescending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA > upperB) {
-        return -1;
-    }
-    if (upperA < upperB) {
-        return 1;
-    }
-    return 0;
-}; };
+var byTextAscending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA < upperB) {
+            return -1;
+        }
+        if (upperA > upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
+var byTextDescending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA > upperB) {
+            return -1;
+        }
+        if (upperA < upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
 
 var sortByColumn = function (data, sortColumn, columns) {
     var isAscending = null;
@@ -1274,142 +1284,150 @@ var getColumnsByName = function (columns) {
     });
     return columnsByName;
 };
-var createReducer = function () { return function (state, action) {
-    var rows = [];
-    var nextPage = 0;
-    var prevPage = 0;
-    var isAscending = null;
-    var sortedRows = [];
-    var columnCopy = [];
-    var filteredRows = [];
-    var selectedRowsById = {};
-    var stateCopy = __assign({}, state);
-    var rowIds = {};
-    switch (action.type) {
-        case "SET_ROWS":
-            rows = __spreadArrays(action.data);
-            // preserve sorting if a sort is already enabled when data changes
-            if (state.sortColumn) {
-                rows = sortByColumn(action.data, state.sortColumn, state.columns);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            return __assign(__assign({}, state), { rows: rows, originalRows: action.data });
-        case "NEXT_PAGE":
-            nextPage = state.pagination.page + 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
-        case "PREV_PAGE":
-            prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
-        case "TOGGLE_SORT":
-            if (!(action.columnName in state.columnsByName)) {
-                throw new Error("Invalid column, " + action.columnName + " not found");
-            }
-            // loop through all columns and set the sort parameter to off unless
-            // it's the specified column (only one column at a time for )
-            columnCopy = state.columns.map(function (column) {
-                // if the row was found
-                if (action.columnName === column.name) {
-                    if (action.isAscOverride !== undefined) {
-                        // force the sort order
-                        isAscending = action.isAscOverride;
-                    }
-                    else {
-                        // if it's undefined, start by setting to ascending, otherwise toggle
-                        isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
-                    }
-                    if (column.sort) {
-                        sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
-                        // default to sort by string
-                    }
-                    else {
-                        sortedRows = isAscending
-                            ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
-                            : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
-                    }
-                    return __assign(__assign({}, column), { sorted: {
-                            on: true,
-                            asc: isAscending,
-                        } });
+var createReducer = function () {
+    return function (state, action) {
+        var rows = [];
+        var nextPage = 0;
+        var prevPage = 0;
+        var isAscending = null;
+        var sortedRows = [];
+        var columnCopy = [];
+        var filteredRows = [];
+        var selectedRowsById = {};
+        var stateCopy = __assign({}, state);
+        var rowIds = {};
+        switch (action.type) {
+            case "SET_ROWS":
+                rows = __spreadArrays(action.data);
+                // preserve sorting if a sort is already enabled when data changes
+                if (state.sortColumn) {
+                    rows = sortByColumn(action.data, state.sortColumn, state.columns);
                 }
-                // set sorting to false for all other columns
-                return __assign(__assign({}, column), { sorted: {
-                        on: false,
-                        asc: false,
-                    } });
-            });
-            return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
-        case "GLOBAL_FILTER":
-            filteredRows = action.filter(state.originalRows);
-            selectedRowsById = {};
-            state.selectedRows.forEach(function (row) {
-                var _a;
-                selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
-            });
-            return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
-                    return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
-                }), filterOn: true });
-        case "SELECT_ROW":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.rows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                return newRow;
-            });
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                return newRow;
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
-            stateCopy.toggleAllState =
-                stateCopy.selectedRows.length === stateCopy.rows.length
-                    ? (stateCopy.toggleAllState = true)
-                    : (stateCopy.toggleAllState = false);
-            return stateCopy;
-        case "SEARCH_STRING":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.originalRows.filter(function (row) {
-                return (row.cells.filter(function (cell) {
-                    if (cell.value.includes(action.searchString)) {
-                        return true;
+                return __assign(__assign({}, state), { rows: rows, originalRows: action.data });
+            case "NEXT_PAGE":
+                nextPage = state.pagination.page + 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
+            case "PREV_PAGE":
+                prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
+            case "TOGGLE_SORT":
+                if (!(action.columnName in state.columnsByName)) {
+                    throw new Error("Invalid column, " + action.columnName + " not found");
+                }
+                // loop through all columns and set the sort parameter to off unless
+                // it's the specified column (only one column at a time for )
+                columnCopy = state.columns.map(function (column) {
+                    // if the row was found
+                    if (action.columnName === column.name) {
+                        if (action.isAscOverride !== undefined) {
+                            // force the sort order
+                            isAscending = action.isAscOverride;
+                        }
+                        else {
+                            // if it's undefined, start by setting to ascending, otherwise toggle
+                            isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
+                        }
+                        if (column.sort) {
+                            sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
+                            // default to sort by string
+                        }
+                        else {
+                            sortedRows = isAscending
+                                ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
+                                : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
+                        }
+                        return __assign(__assign({}, column), {
+                            sorted: {
+                                on: true,
+                                asc: isAscending,
+                            }
+                        });
                     }
-                    return false;
-                }).length > 0);
-            });
-            return stateCopy;
-        case "TOGGLE_ALL":
-            if (state.selectedRows.length < state.rows.length) {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = true;
-                    return __assign(__assign({}, row), { selected: true });
+                    // set sorting to false for all other columns
+                    return __assign(__assign({}, column), {
+                        sorted: {
+                            on: false,
+                            asc: false,
+                        }
+                    });
                 });
-                stateCopy.toggleAllState = true;
-            }
-            else {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = false;
-                    return __assign(__assign({}, row), { selected: false });
+                return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
+            case "GLOBAL_FILTER":
+                filteredRows = action.filter(state.originalRows);
+                selectedRowsById = {};
+                state.selectedRows.forEach(function (row) {
+                    var _a;
+                    selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
                 });
-                stateCopy.toggleAllState = false;
-            }
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
-            return stateCopy;
-        default:
-            throw new Error("Invalid reducer action");
-    }
-}; };
+                return __assign(__assign({}, state), {
+                    rows: filteredRows.map(function (row) {
+                        return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
+                    }), filterOn: true
+                });
+            case "SELECT_ROW":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.rows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
+                stateCopy.toggleAllState =
+                    stateCopy.selectedRows.length === stateCopy.rows.length
+                        ? (stateCopy.toggleAllState = true)
+                        : (stateCopy.toggleAllState = false);
+                return stateCopy;
+            case "SEARCH_STRING":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.originalRows.filter(function (row) {
+                    return (row.cells.filter(function (cell) {
+                        if (cell.value.includes(action.searchString)) {
+                            return true;
+                        }
+                        return false;
+                    }).length > 0);
+                });
+                return stateCopy;
+            case "TOGGLE_ALL":
+                if (state.selectedRows.length < state.rows.length) {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = true;
+                        return __assign(__assign({}, row), { selected: true });
+                    });
+                    stateCopy.toggleAllState = true;
+                }
+                else {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = false;
+                        return __assign(__assign({}, row), { selected: false });
+                    });
+                    stateCopy.toggleAllState = false;
+                }
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
+                return stateCopy;
+            default:
+                throw new Error("Invalid reducer action");
+        }
+    };
+};
 var sortDataInOrder = function (data, columns) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return data.map(function (row) {
@@ -1425,10 +1443,10 @@ var sortDataInOrder = function (data, columns) {
     });
 };
 var makeRender = function (
-// eslint-disable-next-line
-value, 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-render, row) {
+    // eslint-disable-next-line
+    value,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    render, row) {
     return render ? function () { return render({ row: row, value: value }); } : function () { return value; };
 };
 var makeHeaderRender = function (label, render) {
@@ -1437,9 +1455,11 @@ var makeHeaderRender = function (label, render) {
 var useTable = function (columns, data, options) {
     var columnsWithSorting = React.useMemo(function () {
         return columns.map(function (column) {
-            return __assign(__assign({}, column), { label: column.label ? column.label : column.name, hidden: column.hidden ? column.hidden : false, sort: column.sort, sorted: {
+            return __assign(__assign({}, column), {
+                label: column.label ? column.label : column.name, hidden: column.hidden ? column.hidden : false, sort: column.sort, sorted: {
                     on: false,
-                } });
+                }
+            });
         });
     }, [columns]);
     var columnsByName = React.useMemo(function () { return getColumnsByName(columnsWithSorting); }, [columnsWithSorting]);
@@ -1453,14 +1473,14 @@ var useTable = function (columns, data, options) {
                 original: row,
                 cells: Object.entries(row)
                     .map(function (_a) {
-                    var column = _a[0], value = _a[1];
-                    return {
-                        hidden: columnsByName[column].hidden,
-                        field: column,
-                        value: value,
-                        render: makeRender(value, columnsByName[column].render, row),
-                    };
-                })
+                        var column = _a[0], value = _a[1];
+                        return {
+                            hidden: columnsByName[column].hidden,
+                            field: column,
+                            value: value,
+                            render: makeRender(value, columnsByName[column].render, row),
+                        };
+                    })
                     .filter(function (cell) { return !cell.hidden; }),
             };
         });
@@ -1804,17 +1824,19 @@ var ModalProvider = function (_a) {
             handleDismiss();
         }
     };
-    return (React__default['default'].createElement(Context.Provider, { value: {
+    return (React__default['default'].createElement(Context.Provider, {
+        value: {
             onPresent: handlePresent,
             onDismiss: handleDismiss,
             setCloseOnOverlayClick: setCloseOnOverlayClick,
-        } },
+        }
+    },
         isOpen && (React__default['default'].createElement(ModalWrapper, null,
             React__default['default'].createElement(Overlay, { show: true, onClick: handleOverlayDismiss }),
             React__default['default'].isValidElement(modalNode) &&
-                React__default['default'].cloneElement(modalNode, {
-                    onDismiss: handleDismiss,
-                }))),
+            React__default['default'].cloneElement(modalNode, {
+                onDismiss: handleDismiss,
+            }))),
         children));
 };
 var templateObject_1$w;
@@ -2293,8 +2315,10 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React__default['default'].createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
-                entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
-                    React__default['default'].createElement(MenuLink, { href: item.href }, item.label))); })));
+                entry.items.map(function (item) {
+                    return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
+                        React__default['default'].createElement(MenuLink, { href: item.href }, item.label)));
+                })));
         }
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
             React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick },
@@ -2341,10 +2365,16 @@ var PanelFooter = function (_a) {
                     React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
                     React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
                     React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
-            React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React__default['default'].createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
-                // Safari fix
-                style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
+            React__default['default'].createElement(Dropdown, {
+                position: "top-right", target: React__default['default'].createElement(Button, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
+                    React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase()))
+            }, langs.map(function (lang) {
+                return (React__default['default'].createElement(MenuButton, {
+                    key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); },
+                    // Safari fix
+                    style: { minHeight: "32px", height: "auto" }
+                }, lang.language));
+            })))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
@@ -2493,11 +2523,13 @@ var localStorageKey = "accountStatus";
 var WalletCard = function (_a) {
     var login = _a.login, walletConfig = _a.walletConfig, onDismiss = _a.onDismiss, mb = _a.mb;
     var title = walletConfig.title, Icon = walletConfig.icon;
-    return (React__default['default'].createElement(Button, { fullWidth: true, variant: "tertiary", onClick: function () {
+    return (React__default['default'].createElement(Button, {
+        fullWidth: true, variant: "tertiary", onClick: function () {
             login(walletConfig.connectorId);
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
-        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase()
+    },
         React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
         React__default['default'].createElement(Icon, { width: "32px" })));
 };
@@ -2530,7 +2562,8 @@ var Tooltip = styled__default['default'].div(templateObject_2$d || (templateObje
 var CopyToClipboard = function (_a) {
     var toCopy = _a.toCopy, children = _a.children, props = __rest(_a, ["toCopy", "children"]);
     var _b = React.useState(false), isTooltipDisplayed = _b[0], setIsTooltipDisplayed = _b[1];
-    return (React__default['default'].createElement(StyleButton, __assign({ small: true, bold: true, onClick: function () {
+    return (React__default['default'].createElement(StyleButton, __assign({
+        small: true, bold: true, onClick: function () {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(toCopy);
                 setIsTooltipDisplayed(true);
@@ -2538,7 +2571,8 @@ var CopyToClipboard = function (_a) {
                     setIsTooltipDisplayed(false);
                 }, 1000);
             }
-        } }, props),
+        }
+    }, props),
         children,
         React__default['default'].createElement(Icon$n, { width: "20px", color: "primary", ml: "4px" }),
         React__default['default'].createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
@@ -2553,12 +2587,14 @@ var AccountModal = function (_a) {
             React__default['default'].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
-            React__default['default'].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+            React__default['default'].createElement(Button, {
+                size: "sm", variant: "secondary", onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
                     window.location.reload();
-                } }, "Logout"))));
+                }
+            }, "Logout"))));
 };
 
 var useWalletModal = function (login, logout, account) {
@@ -2571,11 +2607,15 @@ var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "tertiary", onClick: function () {
+    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, {
+        size: "sm", variant: "tertiary", onClick: function () {
             onPresentAccountModal();
-        } }, accountEllipsis)) : (React__default['default'].createElement(Button, { size: "sm", onClick: function () {
+        }
+    }, accountEllipsis)) : (React__default['default'].createElement(Button, {
+        size: "sm", onClick: function () {
             onPresentConnectModal();
-        } }, "Connect"))));
+        }
+    }, "Connect"))));
 };
 
 var Icon$17 = function (props) {
@@ -2788,12 +2828,16 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), {
+    background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
-    } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
+    }
+});
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), {
+    secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
-    } });
+    }
+});
 
 var light = {
     background: lightColors.card,
