@@ -2129,18 +2129,18 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "http://t.me/charmanderdefidiscussion",
+                href: "https://t.me/NautilusFinanceDiscussion",
             },
             {
                 label: "Announcements",
-                href: "http://t.me/charmanderdefiannouncements",
+                href: "https://t.me/NautilusFinanceAnnouncement",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/Charmander_Defi",
+        href: "https://twitter.com/NautilusDefi",
     },
 ];
 var MENU_HEIGHT = 64;
