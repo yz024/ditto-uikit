@@ -2142,18 +2142,18 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/NautilusFinanceDiscussion",
+                href: "https://gengarfinance.com/soon",
             },
             {
                 label: "Announcements",
-                href: "https://t.me/NautilusFinanceAnnouncement",
+                href: "https://gengarfinance.com/soon",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/NautilusDefi",
+        href: "https://gengarfinance.com/soon",
     },
 ];
 var MENU_HEIGHT = 64;
