@@ -2128,19 +2128,15 @@ var socials = [
         icon: "TelegramIcon",
         items: [
             {
-                label: "English",
-                href: "https://gengarfinance.com/soon",
-            },
-            {
-                label: "Announcements",
-                href: "https://gengarfinance.com/soon",
+                label: "Discussion",
+                href: "https://t.me/GengarFinance",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://gengarfinance.com/soon",
+        href: "https://twitter.com/GengarFinance",
     },
 ];
 var MENU_HEIGHT = 64;
