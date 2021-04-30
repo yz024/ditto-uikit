@@ -2,10 +2,10 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#ED4B9E",
-  primary: "#1A8E18",
-  primaryBright: "#1A8E18",
-  primaryDark: "#1A8E18",
-  secondary: "#1A8E18",
+  primary: "#294023",
+  primaryBright: "#294023",
+  primaryDark: "#294023",
+  secondary: "#294023",
   success: "#31D0AA",
   warning: "#FFB237",
 };
@@ -23,9 +23,9 @@ export const lightColors: Colors = {
   invertedContrast: "#FFFFFF",
   input: "#eeeaf4",
   tertiary: "#EFF4F5",
-  text: "#452A7A",
+  text: "#294023",
   textDisabled: "#BDC2C4",
-  textSubtle: "#8f80ba",
+  textSubtle: "#403535",
   borderColor: "#E9EAEB",
   card: "#FFFFFF",
   gradients: {
