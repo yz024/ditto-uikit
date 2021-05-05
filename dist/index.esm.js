@@ -2126,14 +2126,14 @@ var socials = [
         items: [
             {
                 label: "Discussion",
-                href: "/",
+                href: "https://t.me/squirtlefinance/",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "/",
+        href: "https://twitter.com/SquirtleFinance/",
     },
 ];
 var MENU_HEIGHT = 64;
